@@ -278,7 +278,7 @@ is complementary to auto-update which also reboots the system and does updates
 regardless of whether devel:openQA contains updates.
 
 %prep
-%setup -q -a1
+%setup -q -a1 -n openQA-%version
 sed -e 's,/bin/env python,/bin/python,' -i script/openqa-label-all
 
 %build
